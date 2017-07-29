@@ -16,33 +16,7 @@
 		
 	  <script type="text/javascript" src="js/jquery.js"></script>
     
-    <script>
-        $(document).ready(function() {
-		$("#buy-button").click(function(){
-			//var senddata = $('#loginform').serialize();
-			$.ajax({
-			type:"POST",
-            url:"http://192.168.43.169/practice/login.php",
-			data: senddata,
-			success: function(result){
-				var res = $.trim(result);
-	
-				if(res=="correct")
-				{				
-					window.location.replace("product_details.html");
-			
-			    }
-				if(res=="incorrect")
-				{
-				alert("incorrect");
-				}
-			}});
-		});
-		
-	
-		});
-        
-        </script>
+    
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -80,7 +54,7 @@
         <!--Text-->
         <p class="card-text">Some quick details about the product.</p>
         <p class="card-text"><b>Price : Rs.100/-</b></p>
-        <a href="userorders.html" class="btn btn-primary" id="buy-button" name="breakfast">Buy</a>
+        <a href="userorder.html" class="btn btn-primary" id="buy-button" name="breakfast">Buy</a>
     </div>
     <!--/.Card content-->
 
