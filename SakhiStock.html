@@ -17,37 +17,60 @@
 	  <script type="text/javascript" src="js/jquery.js"></script>
 
 <script>
-$(document).ready(function() {
-		/*$("#orderNow").click(function(){
-			//var senddata = $('#order').serialize();
+
+      $(document).ready(function() {
+ 
+	  $("#qty").click(function(){
+			var senddata = $('#registerform').serialize();
 			$.ajax({
 			type:"POST",
-      url:"http://localhost/team-20/phpScripts/sakhi_order.php",			
+//			url: "https://surajsingh.000webhostapp.com/practice/rigister.php",
+           url:"http://192.168.43.169/practice/sakhi_order.php",	
+	data: senddata,
 			success: function(result){
 				var res = $.trim(result);
-	       	
-			}*/
-
-$.ajax({
-                url: "http://localhost/team-20/sakhi_order.php",                  //the script to call to get data
-
-                data: "",                        //you can insert url argumnets here to pass to api.php
-                                                 //for example "id=5&parent=6"
-                dataType: 'json',                //data format
-                success: function(data)          //on recieve of reply
-                {
-                    for (var i=0; i<data.length; i++) {
-                        var row = $('<tr><td>'+data[i].flavor+ '</td><td>' + data[i].quantity +'</td><td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Accept</button></td><td> <button type="button" class="btn btn-info" data-toggle="modal" data-target="#updateModal">Redirect</button></td></tr>'+ '');
-                        $('#myList').append(row);
-                    }
-                }
-            });
-
-});
+	
+				if(res=="correct")
+				{
+					window.location.replace("index.html");
+			
+				}
+				if(res=="incorrect")
+				{
+				alert("incorrect");
+				}
+			}});
 		});
 		
 	
+	
+	$("#btn-submit").click(function(){
+			var senddata = $('#registerform').serialize();
+			$.ajax({
+			type:"POST",
+//			url: "https://surajsingh.000webhostapp.com/practice/rigister.php",
+           url:"http://192.168.43.169/practice/sakhi_order.php",	
+	data: senddata,
+			success: function(result){
+				var res = $.trim(result);
+	
+				if(res=="correct")
+				{
+					window.location.replace("index.html");
+			
+				}
+				if(res=="incorrect")
+				{
+				alert("incorrect");
+				}
+			}});
 		});
+		
+	
+	
+		});
+
+
 	</script>
 		</head>
 	   <body>
