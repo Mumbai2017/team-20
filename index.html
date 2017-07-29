@@ -15,6 +15,24 @@
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		
 	  <script type="text/javascript" src="js/jquery.js"></script>
+	  
+	  
+	  
+	  <script>
+	  
+      $(document).ready(function() {
+ 
+	  $("#forward").click(function(){
+	      alert("Please Login");
+		  	window.location.replace("login.html");
+			
+         	
+	});
+		
+	
+		});
+
+	</script>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -49,7 +67,7 @@
         <!--Text-->
         <p class="card-text">Some quick details about the product.</p>
         <p class="card-text"><b>Price : Rs.100/-</b></p>
-        <a href="#" class="btn btn-primary">Buy</a>
+        <a href="#" id="forward" class="btn btn-primary">Buy</a>
     </div>
     <!--/.Card content-->
 
