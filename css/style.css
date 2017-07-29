@@ -1,1 +1,6 @@
 /* YOUR CUSTOM STYLES */
+.common-img{
+	width: 15.35%; float: right; height: 0;
+    margin-right: 0; *margin-left: -20px;
+    display: inline;
+}
