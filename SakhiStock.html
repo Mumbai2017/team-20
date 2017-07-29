@@ -63,7 +63,7 @@ $.ajax({
 </ul>
 
 	 
-<!--      <ul class="list-group">
+      <ul class="list-group">
           <li class="list-group-item justify-content-between">
             <img src="img/1.jpg" class="img-fluid common-img">
               Breakfast
@@ -127,7 +127,7 @@ $.ajax({
                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Order</button> 
               <button type="button" class="btn btn-info" data-target="#updateModal" data-toggle="modal">Update</button>
           </li>
-      </ul>-->
+      </ul>
 
    
 
@@ -139,14 +139,14 @@ $.ajax({
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                       </button>
-                      <h4 class="modal-title" id="exampleModalLabel">Place Order</h4>
+                      <h4 class="modal-title" id="exampleModalLabel">Place Order</h4>+
                   </div>
                   <div class="modal-body">
-                      <input type="text" name="qty" placeholder="Enter Quantity">
+                      <input type="text" name="qty" placeholder="Enter Quantity"></input>
                   </div>
                   <div class="modal-footer justify-content-center">
                       <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary" id="orderNow">Order Now</button>
+                      <a  class="btn btn-primary" id="orderNow">Order Now</a>
                   </div>
               </div>
           </div>
@@ -154,7 +154,7 @@ $.ajax({
       <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
               <div class="modal-content">
-                  <div class="modal-header">
+                  <div class="modal-header">++
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                       </button>
@@ -164,12 +164,12 @@ $.ajax({
                       <input type="text" name="qty" placeholder="Enter Quantity"></input>
                   </div>
                   <div class="modal-footer justify-content-center">
-                      <button type="button" class="btn btn-danger">Add</button>
-                      <button type="button" class="btn btn-primary">Deduct</button>
+                      <a  id="add" class="btn btn-danger">Add</a>
+                      <a  id="deduct" class="btn btn-primary">Deduct</a>
                   </div>
               </div>
           </div>
-      </div>                                                                                                                                          
+      </div>                                                                                                                                       
  </body>
 <script type="text/javascript">
 $('#orderModal').modal('show');
