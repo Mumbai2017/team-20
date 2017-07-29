@@ -18,24 +18,14 @@
 
 <script>
 $(document).ready(function() {
-		$("#btn-submit").click(function(){
-			var senddata = $('#loginform').serialize();
+		$("#orderNow").click(function(){
+			//var senddata = $('#order').serialize();
 			$.ajax({
 			type:"POST",
-            url:"http://192.168.43.169/practice/login.php",
-			data: senddata,
+      url:"http://localhost/php scripts/sakhi_order.php",			
 			success: function(result){
 				var res = $.trim(result);
-	
-				if(res=="correct")
-				{				
-					window.location.replace("details.html");
-			
-			    }
-				if(res=="incorrect")
-				{
-				alert("incorrect");
-				}
+	     alert(res);	
 			}});
 		});
 		
@@ -128,7 +118,7 @@ $(document).ready(function() {
                   </div>
                   <div class="modal-footer justify-content-center">
                       <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Order Now</button>
+                      <button type="button" class="btn btn-primary" id="orderNow">Order Now</button>
                   </div>
               </div>
           </div>
