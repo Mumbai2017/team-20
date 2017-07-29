@@ -18,15 +18,32 @@
 
 <script>
 $(document).ready(function() {
-		$("#orderNow").click(function(){
+		/*$("#orderNow").click(function(){
 			//var senddata = $('#order').serialize();
 			$.ajax({
 			type:"POST",
       url:"http://localhost/team-20/phpScripts/sakhi_order.php",			
 			success: function(result){
 				var res = $.trim(result);
-	     alert(res);	
-			}});
+	       	
+			}*/
+
+$.ajax({
+                url: "http://localhost/team-20/sakhi_order.php",                  //the script to call to get data
+
+                data: "",                        //you can insert url argumnets here to pass to api.php
+                                                 //for example "id=5&parent=6"
+                dataType: 'json',                //data format
+                success: function(data)          //on recieve of reply
+                {
+                    for (var i=0; i<data.length; i++) {
+                        var row = $('<tr><td>'+data[i].flavor+ '</td><td>' + data[i].quantity +'</td><td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Accept</button></td><td> <button type="button" class="btn btn-info" data-toggle="modal" data-target="#updateModal">Redirect</button></td></tr>'+ '');
+                        $('#myList').append(row);
+                    }
+                }
+            });
+
+});
 		});
 		
 	
@@ -34,8 +51,19 @@ $(document).ready(function() {
 	</script>
 		</head>
 	   <body>
+           <ul class="list-group" >
+    <li class="list-group-item justify-content-between" >
+        <table class="pure-table "id="myList">
+            <tr>
+                <th>Flavor</th>
+                <th>Quantity</th>
+            </tr>
+        </table>
+    </li>
+</ul>
+
 	 
-      <ul class="list-group">
+<!--      <ul class="list-group">
           <li class="list-group-item justify-content-between">
             <img src="img/1.jpg" class="img-fluid common-img">
               Breakfast
@@ -99,7 +127,7 @@ $(document).ready(function() {
                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Order</button> 
               <button type="button" class="btn btn-info" data-target="#updateModal" data-toggle="modal">Update</button>
           </li>
-      </ul>
+      </ul>-->
 
    
 
@@ -141,8 +169,7 @@ $(document).ready(function() {
                   </div>
               </div>
           </div>
-      </div>                                                                                                    
-                                            
+      </div>                                                                                                                                          
  </body>
 <script type="text/javascript">
 $('#orderModal').modal('show');
