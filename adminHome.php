@@ -44,6 +44,10 @@ $(document).ready(function() {
 	</script>
 		</head>
 	   <body>
+       <?php
+       include("php scripts/init.php");
+       
+?>
 	  <div class="form-header ">
             <h3> Admin Dashboard</h3>
         </div>
