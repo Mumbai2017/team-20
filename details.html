@@ -1,0 +1,63 @@
+<html>
+<head>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+       
+<!--CSS-->
+	   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/mdb.css">
+        <link rel="stylesheet" type="text/css" href="css/mdb.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font.css">
+        <link rel="stylesheet" type="text/css" href="css/compiled.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+  	  <script>
+$(document).ready(function()
+ {
+ var url="http://192.168.43.169/practice/details1.php";
+ $.getJSON(url,function(result){
+ console.log(result);
+ $.each(result, function(i, field){
+ var id=field.id;
+ var firstname=field.firstname;
+ var lastname=field.lastname;
+ var address=field.address;
+ var phone=field.phone;
+ var emailid=field.emailid;
+ $("#listview").append("<a class='item' href='form.html?id="+id+"&firstname="+firstname+"&lastname="+lastname+"&address="+address+"&phone="+phone1+"&emailid="+emailid+"'><span class='item-note'>$"+firstname+"</span><h2>"+ lastname + " </h2><p>"+ address +"</p></a>");
+ });
+ });
+ });
+</script> 
+</head>
+<body>
+   
+ <div class="card-block">
+<div class="text-center">
+	        <a id="btn-submit" class="btn btn-indigo" name="btn">get details</a>
+
+          </div>
+
+    </div>
+
+
+
+
+
+
+   <div class="card-block">
+<div class="text-center">
+	        <a href="http://192.168.43.169/practice/details.php" id="btn-submit" class="btn btn-indigo" name="btn">get details</a>
+
+          </div>
+
+    </div>
+<div class="bar bar-header bar-positive" style="margin-bottom:80px;">
+ <a href="index.html" class="button button-clear">Home</a>
+ <h1 class="title">Read Database (JSON)</h1>
+ </div><br/><br/>
+ <ul class="list" id="listview">
+ </ul>
+</body>
+</html>
