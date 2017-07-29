@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
+-- version 4.6.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 29, 2017 at 06:32 PM
--- Server version: 10.1.21-MariaDB
--- PHP Version: 5.6.30
+-- Generation Time: Jul 29, 2017 at 06:22 PM
+-- Server version: 5.5.42
+-- PHP Version: 5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -61,6 +61,16 @@ CREATE TABLE `c_order` (
   `status` varchar(30) NOT NULL,
   `delivery_type` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `c_order`
+--
+
+INSERT INTO `c_order` (`id`, `cid`, `sid`, `quantity`, `cost`, `order_at`, `status`, `delivery_type`) VALUES
+(1, 1, 1, '5', '800', '2017-07-29 18:15:13', 'delivered', 'pickup'),
+(2, 1, 1, '3', '670', '2017-07-29 18:15:41', 'delivered', 'drop'),
+(3, 1, 2, '3', '670', '2017-07-29 18:15:59', 'pending', 'drop'),
+(4, 3, 2, '23', '6770', '2017-07-29 18:16:27', 'pending', 'drop');
 
 -- --------------------------------------------------------
 
@@ -138,7 +148,8 @@ CREATE TABLE `sakhi` (
 
 INSERT INTO `sakhi` (`id`, `name`, `address`, `area`, `contact_no`, `activated`, `ordered`, `lat`, `log`) VALUES
 (1, 'Sakhi 1', 'Address 1', 'Dadar', '9999888800', 0, 0, '', ''),
-(2, 'Sakhi 2', 'Address 2', 'Vile Parle', '9999888801', 0, 0, '', '');
+(2, 'Sakhi 2', 'Address 2', 'Vile Parle', '9999888801', 0, 0, '', ''),
+(3, 'hema', 'abc nagar', 'bandra', '9087564323', 0, 0, '1.0', '34.566');
 
 -- --------------------------------------------------------
 
@@ -180,7 +191,12 @@ CREATE TABLE `sg_order` (
 
 INSERT INTO `sg_order` (`sid`, `pid`, `quantity`, `order_at`) VALUES
 (1, 3, '40', '0000-00-00 00:00:00'),
-(2, 7, '76', '0000-00-00 00:00:00');
+(2, 7, '76', '0000-00-00 00:00:00'),
+(1, 2, '30', '2017-07-29 18:21:05'),
+(2, 4, '40', '2017-07-29 18:21:24'),
+(2, 9, '30', '2017-07-29 18:21:38'),
+(1, 9, '10', '2017-07-29 18:21:49'),
+(1, 3, '10', '2017-07-29 18:21:58');
 
 --
 -- Indexes for dumped tables
@@ -240,7 +256,7 @@ ALTER TABLE `customer`
 -- AUTO_INCREMENT for table `c_order`
 --
 ALTER TABLE `c_order`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `product`
 --
@@ -250,7 +266,7 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `sakhi`
 --
 ALTER TABLE `sakhi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- Constraints for dumped tables
 --
