@@ -17,7 +17,6 @@
         margin: 0;
         padding: 0;
       }
-        
     </style>
   </head>
 
@@ -26,11 +25,11 @@
 
     <script>
       var customLabel = {
-        restaurant: {
-          label: 'R'
+        Sakhi: {
+          label: 'S'
         },
-        bar: {
-          label: 'B'
+        Customer: {
+          label: 'C'
         }
       };
 
@@ -71,6 +70,7 @@
                 position: point,
                 label: icon.label
               });
+           
               marker.addListener('click', function() {
                 infoWindow.setContent(infowincontent);//Calls infowincontent to show Name and Address
                 infoWindow.open(map, marker);
