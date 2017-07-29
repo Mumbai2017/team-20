@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 29, 2017 at 05:56 PM
+-- Generation Time: Jul 29, 2017 at 06:32 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -34,6 +34,17 @@ CREATE TABLE `customer` (
   `contact_no` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `customer`
+--
+
+INSERT INTO `customer` (`id`, `name`, `address`, `area`, `contact_no`) VALUES
+(1, 'Dummy1', 'Dummy Address 1', 'Andheri', '9999900000'),
+(2, 'Dummy2', 'Dummy Address 2', 'Dadar', '9999900001'),
+(3, 'Dummy 3', 'Dummy Address 3', 'Bandra', '9999900002'),
+(4, 'Dummy 4', 'Dummy Address 4', 'Borivali', '9999900004'),
+(6, 'Dummy 5', 'Dummy Address 5', 'Churchgate', '9999900007');
+
 -- --------------------------------------------------------
 
 --
@@ -62,6 +73,18 @@ CREATE TABLE `g_stock` (
   `quantity` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `g_stock`
+--
+
+INSERT INTO `g_stock` (`pid`, `quantity`) VALUES
+(1, 600),
+(2, 450),
+(3, 400),
+(4, 500),
+(5, 590),
+(6, 700);
+
 -- --------------------------------------------------------
 
 --
@@ -72,23 +95,24 @@ CREATE TABLE `product` (
   `id` int(11) NOT NULL,
   `cost` varchar(10) NOT NULL,
   `flavor` varchar(100) NOT NULL,
-  `image_url` varchar(150) NOT NULL DEFAULT 'img/1.jpg'
+  `image_url` varchar(150) NOT NULL DEFAULT 'img/1.jpg',
+  `description` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`id`, `cost`, `flavor`, `image_url`) VALUES
-(1, '50', 'Breakfast', 'img/1.jpg'),
-(2, '50', 'Dahi Bajri Methi', 'img/2.jpg'),
-(3, '50', 'Jeera', 'img/3.jpg'),
-(4, '50', 'Khichdi', 'img/4.jpg'),
-(5, '50', 'Low Calorie', 'img/5.jpg'),
-(6, '50', 'Methi Masala', 'img/6.jpg'),
-(7, '50', 'Nachni', 'img/7.jpg'),
-(8, '50', 'Peppery Oats', 'img/8.jpg'),
-(9, '50', 'Punjabi Masala', 'img/9.jpg');
+INSERT INTO `product` (`id`, `cost`, `flavor`, `image_url`, `description`) VALUES
+(1, '50', 'Breakfast', 'img/1.jpg', ''),
+(2, '50', 'Dahi Bajri Methi', 'img/2.jpg', ''),
+(3, '50', 'Jeera', 'img/3.jpg', ''),
+(4, '50', 'Khichdi', 'img/4.jpg', ''),
+(5, '50', 'Low Calorie', 'img/5.jpg', ''),
+(6, '50', 'Methi Masala', 'img/6.jpg', ''),
+(7, '50', 'Nachni', 'img/7.jpg', ''),
+(8, '50', 'Peppery Oats', 'img/8.jpg', ''),
+(9, '50', 'Punjabi Masala', 'img/9.jpg', '');
 
 -- --------------------------------------------------------
 
@@ -108,6 +132,14 @@ CREATE TABLE `sakhi` (
   `log` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `sakhi`
+--
+
+INSERT INTO `sakhi` (`id`, `name`, `address`, `area`, `contact_no`, `activated`, `ordered`, `lat`, `log`) VALUES
+(1, 'Sakhi 1', 'Address 1', 'Dadar', '9999888800', 0, 0, '', ''),
+(2, 'Sakhi 2', 'Address 2', 'Vile Parle', '9999888801', 0, 0, '', '');
+
 -- --------------------------------------------------------
 
 --
@@ -119,6 +151,15 @@ CREATE TABLE `sakhi_stock` (
   `pid` int(11) NOT NULL,
   `quantity` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `sakhi_stock`
+--
+
+INSERT INTO `sakhi_stock` (`sid`, `pid`, `quantity`) VALUES
+(1, 1, '100'),
+(2, 4, '160'),
+(1, 4, '60');
 
 -- --------------------------------------------------------
 
@@ -132,6 +173,14 @@ CREATE TABLE `sg_order` (
   `quantity` varchar(10) NOT NULL,
   `order_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `sg_order`
+--
+
+INSERT INTO `sg_order` (`sid`, `pid`, `quantity`, `order_at`) VALUES
+(1, 3, '40', '0000-00-00 00:00:00'),
+(2, 7, '76', '0000-00-00 00:00:00');
 
 --
 -- Indexes for dumped tables
@@ -186,7 +235,7 @@ ALTER TABLE `sg_order`
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `c_order`
 --
@@ -201,7 +250,7 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `sakhi`
 --
 ALTER TABLE `sakhi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- Constraints for dumped tables
 --
