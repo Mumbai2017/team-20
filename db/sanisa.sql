@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 29, 2017 at 04:16 PM
+-- Generation Time: Jul 29, 2017 at 05:56 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -46,7 +46,9 @@ CREATE TABLE `c_order` (
   `sid` int(11) NOT NULL,
   `quantity` varchar(20) NOT NULL,
   `cost` varchar(10) NOT NULL,
-  `status` varchar(30) NOT NULL
+  `order_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `status` varchar(30) NOT NULL,
+  `delivery_type` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -114,15 +116,8 @@ CREATE TABLE `sakhi` (
 
 CREATE TABLE `sakhi_stock` (
   `sid` int(11) NOT NULL,
-  `breakfast` varchar(10) NOT NULL,
-  `dahi` varchar(10) NOT NULL,
-  `jeera` varchar(10) NOT NULL,
-  `khichdi` varchar(10) NOT NULL,
-  `lowcal` varchar(10) NOT NULL,
-  `methi` varchar(10) NOT NULL,
-  `nachni` varchar(10) NOT NULL,
-  `oats` varchar(10) NOT NULL,
-  `punjabi` varchar(10) NOT NULL
+  `pid` int(11) NOT NULL,
+  `quantity` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -134,7 +129,8 @@ CREATE TABLE `sakhi_stock` (
 CREATE TABLE `sg_order` (
   `sid` int(11) NOT NULL,
   `pid` int(11) NOT NULL,
-  `quantity` varchar(10) NOT NULL
+  `quantity` varchar(10) NOT NULL,
+  `order_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -174,12 +170,6 @@ ALTER TABLE `product`
 ALTER TABLE `sakhi`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `contact_no` (`contact_no`);
-
---
--- Indexes for table `sakhi_stock`
---
-ALTER TABLE `sakhi_stock`
-  ADD KEY `sk` (`sid`);
 
 --
 -- Indexes for table `sg_order`
@@ -228,12 +218,6 @@ ALTER TABLE `c_order`
 --
 ALTER TABLE `g_stock`
   ADD CONSTRAINT `order` FOREIGN KEY (`pid`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `sakhi_stock`
---
-ALTER TABLE `sakhi_stock`
-  ADD CONSTRAINT `sk` FOREIGN KEY (`sid`) REFERENCES `sakhi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `sg_order`
