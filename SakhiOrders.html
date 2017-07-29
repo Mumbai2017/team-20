@@ -1,0 +1,51 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/mdb.css">
+        <link rel="stylesheet" type="text/css" href="css/mdb.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font.css">
+        <link rel="stylesheet" type="text/css" href="css/compiled.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		
+	  <script type="text/javascript" src="js/jquery.js"></script>
+
+<script>
+$(document).ready(function() {
+		$("#btn-submit").click(function(){
+			var senddata = $('#loginform').serialize();
+			$.ajax({
+			type:"POST",
+            url:"http://192.168.43.169/practice/login.php",
+			data: senddata,
+			success: function(result){
+				var res = $.trim(result);
+	
+				if(res=="correct")
+				{				
+					window.location.replace("details.html");
+			
+			    }
+				if(res=="incorrect")
+				{
+				alert("incorrect");
+				}
+			}});
+		});
+		
+	
+		});
+	</script>
+		</head>
+	   <body>     
+	 
+
+    </body>
+
+</html>
