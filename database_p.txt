@@ -1,6 +1,6 @@
 <?php 
 $db_name = "id2379288_sanisa";
-$mysql_username = "id2379288_vaibhav";
+$mysql_username = "id2379288_vaibhavh";
 $mysql_password = "vaibhavh";
 $server_name = "localhost:3306";
 $conn = mysqli_connect($server_name, $mysql_username, $mysql_password,$db_name);
