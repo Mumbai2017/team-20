@@ -16,53 +16,36 @@
 
     <script type="text/javascript" src="js/jquery.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            $("#btn-submit").click(function(){
-                var senddata = $('#loginform').serialize();
-                $.ajax({
-                    type:"POST",
-                    url:"http://192.168.43.169/practice/login.php",
-                    data: senddata,
-                    success: function(result){
-                        var res = $.trim(result);
+    <script id="source" language="javascript" type="text/javascript">
 
-                        if(res=="correct")
-                        {
-                            window.location.replace("details.html");
-
-                        }
-                        if(res=="incorrect")
-                        {
-                            alert("incorrect");
-                        }
-                    }});
+        $(function ()
+        {
+            $.ajax({
+                url: "http://10.49.191.59//details.php",                  //the script to call to get data
+                data: "",                        //you can insert url argumnets here to pass to api.php
+                                                 //for example "id=5&parent=6"
+                dataType: 'json',                //data format
+                success: function(data)          //on recieve of reply
+                {
+                    for (var i=0; i<data.length; i++) {
+                        var row = $('<tr><td>' + data[i].id+ '</td><td>' + data[i].name + '</td></tr>');
+                        $('#myTable').append(row);
+                    }
+                }
             });
-
-
         });
+
     </script>
+
 </head>
 <body>
-<?php
-$conn = mysqli_connect("localhost","root","","sanisa");
-$sql="select name from customer where id=1";
-$res=mysqli_query("$conn",$sql);
-if(mysqli_num_rows($res)>0)
-{
-    while($row=mysqli_fetch_assoc($res))
-    {
-       echo "<ul class=\"list-group\">
-    <li class=\"list-group-item justify-content-between\">
-        <span class=\"badge badge-primary badge-pill\">$row[name]</span>
-        <button type=\"button\" class=\"btn btn-success\" data-toggle=\"modal\" data-target=\"#orderModal\">Confirm</button>
-        <button type=\"button\" class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#updateModal\">Redirect</button>
-    </li>
-</ul>
-";
-    }
-}
-?>
+<table id="myTable">
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+
+    </tr>
+</table>
 
 
 
