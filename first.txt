@@ -1,7 +1,3 @@
-<<<<<<< HEAD
 my demo project
 hdsj
-sjckz
-=======
-new start!!!!!!!
->>>>>>> 950f86d7b59749caebdaa91d8faebe12785c3fdf
+
