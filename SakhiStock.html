@@ -22,7 +22,7 @@ $(document).ready(function() {
 			//var senddata = $('#order').serialize();
 			$.ajax({
 			type:"POST",
-      url:"http://localhost/php scripts/sakhi_order.php",			
+      url:"http://localhost/team-20/phpScripts/sakhi_order.php",			
 			success: function(result){
 				var res = $.trim(result);
 	     alert(res);	
@@ -101,7 +101,7 @@ $(document).ready(function() {
           </li>
       </ul>
 
-  </div>  
+   
 
        
       <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -114,7 +114,7 @@ $(document).ready(function() {
                       <h4 class="modal-title" id="exampleModalLabel">Place Order</h4>
                   </div>
                   <div class="modal-body">
-                      <input type="text" name="qty" placeholder="Enter Quantity"></input>
+                      <input type="text" name="qty" placeholder="Enter Quantity">
                   </div>
                   <div class="modal-footer justify-content-center">
                       <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
