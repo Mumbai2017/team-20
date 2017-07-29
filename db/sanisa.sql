@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 29, 2017 at 12:42 PM
+-- Generation Time: Jul 29, 2017 at 01:09 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -80,7 +80,9 @@ CREATE TABLE `sakhi` (
   `area` varchar(50) NOT NULL,
   `contact_no` varchar(20) NOT NULL,
   `activated` tinyint(1) NOT NULL DEFAULT '0',
-  `ordered` tinyint(1) NOT NULL DEFAULT '0'
+  `ordered` tinyint(1) NOT NULL DEFAULT '0',
+  `lat` varchar(60) NOT NULL,
+  `log` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
