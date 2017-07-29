@@ -1,6 +1,5 @@
 <html>
-<head>
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
@@ -80,10 +79,6 @@
 
 
 
-
-
-
-
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places"></script>
 <script src='js/jquery-1.11.0.min.js'></script>
 <script type="text/javascript" src="js/jquery.js"></script>
@@ -118,6 +113,12 @@ geocoder.geocode( { 'address': address}, function(results, status) {
   if (status == google.maps.GeocoderStatus.OK) {
     latitude = results[0].geometry.location.lat();
     longitude = results[0].geometry.location.lng();
+	var pyrmont = new google.maps.LatLng(latitude, longitude);
+	var map = new google.maps.Map(document.getElementById("map-canvas"), {
+    center: pyrmont,
+    zoom: 13
+  });
+	
     
   } 
 });
@@ -153,7 +154,7 @@ var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions)
    var contentString = add;
    var marker = new google.maps.Marker({
      position: new google.maps.LatLng(lat,lng),
-     map: map,
+     
            });
 
   google.maps.event.addListener(marker, 'click', function() {
@@ -162,6 +163,30 @@ var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions)
    });
 
    bounds.extend(marker.position);
+   var datalat = new Array();
+   var datalog = new Array();
+    $.ajax({                                      
+      url: "http://10.49.169.253/demo/select.php",                  //the script to call to get data          
+      data: "",                        //you can insert url argumnets here to pass to api.php
+                                       //for example "id=5&parent=6"
+      dataType: 'json',                //data format      
+      success: function(data)          //on recieve of reply
+      {
+ for (var i=0; i<data.length; i++) {
+            datalat[0]=data[i].lat;
+datalog[0]=data[i].log;
+alert(datalat[0]);			
+alert(datalog[0]);	
+	  }
+}	  
+
+    });
+		
+   // infowindow.setContent(place.name);
+   // infowindow.open(map, this);
+  
+
+   
 
  }
 var geocoder = new google.maps.Geocoder(); 
@@ -181,7 +206,7 @@ function theNext() {
       map.fitBounds(bounds);
     }
   }
-function geocodeAddress(address, next) {alert("jii");
+function geocodeAddress(address, next) {
     geocoder.geocode({address:address}, function (results,status)
       { 
          if (status == google.maps.GeocoderStatus.OK) {
