@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 29, 2017 at 01:09 PM
+-- Generation Time: Jul 29, 2017 at 04:16 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -56,16 +56,37 @@ CREATE TABLE `c_order` (
 --
 
 CREATE TABLE `g_stock` (
-  `breakfast` varchar(10) NOT NULL,
-  `dahi` varchar(10) NOT NULL,
-  `jeera` varchar(10) NOT NULL,
-  `khichdi` varchar(10) NOT NULL,
-  `lowcal` varchar(10) NOT NULL,
-  `methi` varchar(10) NOT NULL,
-  `nachni` varchar(10) NOT NULL,
-  `oats` varchar(10) NOT NULL,
-  `punjabi` varchar(10) NOT NULL
+  `pid` int(11) NOT NULL,
+  `quantity` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product`
+--
+
+CREATE TABLE `product` (
+  `id` int(11) NOT NULL,
+  `cost` varchar(10) NOT NULL,
+  `flavor` varchar(100) NOT NULL,
+  `image_url` varchar(150) NOT NULL DEFAULT 'img/1.jpg'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`id`, `cost`, `flavor`, `image_url`) VALUES
+(1, '50', 'Breakfast', 'img/1.jpg'),
+(2, '50', 'Dahi Bajri Methi', 'img/2.jpg'),
+(3, '50', 'Jeera', 'img/3.jpg'),
+(4, '50', 'Khichdi', 'img/4.jpg'),
+(5, '50', 'Low Calorie', 'img/5.jpg'),
+(6, '50', 'Methi Masala', 'img/6.jpg'),
+(7, '50', 'Nachni', 'img/7.jpg'),
+(8, '50', 'Peppery Oats', 'img/8.jpg'),
+(9, '50', 'Punjabi Masala', 'img/9.jpg');
 
 -- --------------------------------------------------------
 
@@ -112,15 +133,8 @@ CREATE TABLE `sakhi_stock` (
 
 CREATE TABLE `sg_order` (
   `sid` int(11) NOT NULL,
-  `breakfast` varchar(10) NOT NULL,
-  `dahi` varchar(10) NOT NULL,
-  `jeera` varchar(10) NOT NULL,
-  `khichdi` varchar(10) NOT NULL,
-  `lowcal` varchar(10) NOT NULL,
-  `methi` varchar(10) NOT NULL,
-  `nachni` varchar(10) NOT NULL,
-  `oats` varchar(10) NOT NULL,
-  `punjabi` varchar(10) NOT NULL
+  `pid` int(11) NOT NULL,
+  `quantity` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -143,6 +157,18 @@ ALTER TABLE `c_order`
   ADD KEY `skcoo` (`sid`);
 
 --
+-- Indexes for table `g_stock`
+--
+ALTER TABLE `g_stock`
+  ADD KEY `order` (`pid`);
+
+--
+-- Indexes for table `product`
+--
+ALTER TABLE `product`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `sakhi`
 --
 ALTER TABLE `sakhi`
@@ -154,6 +180,13 @@ ALTER TABLE `sakhi`
 --
 ALTER TABLE `sakhi_stock`
   ADD KEY `sk` (`sid`);
+
+--
+-- Indexes for table `sg_order`
+--
+ALTER TABLE `sg_order`
+  ADD KEY `so` (`sid`),
+  ADD KEY `soo` (`pid`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -169,6 +202,11 @@ ALTER TABLE `customer`
 --
 ALTER TABLE `c_order`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `product`
+--
+ALTER TABLE `product`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `sakhi`
 --
@@ -186,10 +224,23 @@ ALTER TABLE `c_order`
   ADD CONSTRAINT `skcoo` FOREIGN KEY (`sid`) REFERENCES `sakhi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
+-- Constraints for table `g_stock`
+--
+ALTER TABLE `g_stock`
+  ADD CONSTRAINT `order` FOREIGN KEY (`pid`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
 -- Constraints for table `sakhi_stock`
 --
 ALTER TABLE `sakhi_stock`
   ADD CONSTRAINT `sk` FOREIGN KEY (`sid`) REFERENCES `sakhi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `sg_order`
+--
+ALTER TABLE `sg_order`
+  ADD CONSTRAINT `so` FOREIGN KEY (`sid`) REFERENCES `sakhi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `soo` FOREIGN KEY (`pid`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
