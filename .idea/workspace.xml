@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b5f39e4-f059-4cae-b9e9-d0eadefcdce2" name="Default" comment="" />
+    <list default="true" id="9b5f39e4-f059-4cae-b9e9-d0eadefcdce2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +17,17 @@
         <entry file="file://C:/xampp/htdocs/GitHub/team-20/sakhi_orders.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="212">
-              <caret line="31" column="138" lean-forward="false" selection-start-line="31" selection-start-column="138" selection-end-line="31" selection-end-column="138" />
+              <caret line="31" column="429" lean-forward="false" selection-start-line="31" selection-start-column="429" selection-end-line="31" selection-end-column="429" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order_placed.html" pinned="false" current-in-tab="false">
+        <entry file="file://C:/xampp/htdocs/GitHub/team-20/order_placed.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -34,9 +46,12 @@
       <file leaf-file-name="SakhiStock.html" pinned="false" current-in-tab="false">
         <entry file="file://C:/xampp/htdocs/GitHub/team-20/SakhiStock.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="56" column="48" lean-forward="false" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
-              <folding />
+            <state relative-caret-position="221">
+              <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding>
+                <element signature="e#7401#7408#1" expanded="true" />
+                <element signature="e#8478#8485#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,6 +68,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="adminHome.php" pinned="false" current-in-tab="false">
+        <entry file="file://C:/xampp/htdocs/GitHub/team-20/adminHome.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-485">
+              <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sakhihome.html" pinned="false" current-in-tab="false">
+        <entry file="file://C:/xampp/htdocs/GitHub/team-20/sakhihome.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-867">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="details.txt" pinned="false" current-in-tab="false">
         <entry file="file://C:/xampp/htdocs/GitHub/team-20/details.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,6 +99,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,6 +123,9 @@
         <option value="$PROJECT_DIR$/sakhi_orders1.php" />
         <option value="$PROJECT_DIR$/sakhi_orders.php" />
         <option value="C:/xampp/htdocs/GitHub/team-20/sakhi_orders1.php" />
+        <option value="C:/xampp/htdocs/GitHub/team-20/adminHome.php" />
+        <option value="C:/xampp/htdocs/GitHub/order_placed.html" />
+        <option value="C:/xampp/htdocs/GitHub/team-20/order_placed.html" />
         <option value="C:/xampp/htdocs/GitHub/team-20/sakhi_orders.html" />
       </list>
     </option>
@@ -156,12 +201,6 @@
             </path>
             <path>
               <item name="team-20" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GitHub" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="team-20" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="db" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="team-20" type="b2602c69:ProjectViewProjectNode" />
               <item name="matrimony" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -179,6 +218,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/xampp/htdocs/GitHub" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\GitHub\team-20" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -202,12 +247,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501336899876</updated>
-      <workItem from="1501336901352" duration="18590000" />
+      <workItem from="1501336901352" duration="24499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18590000" />
+    <option name="totallyTimeSpent" value="24499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -435,8 +480,8 @@
         <state relative-caret-position="272">
           <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
           <folding>
-            <marker date="1501357981191" expanded="true" signature="355:478" ph="select name,... customer" />
-            <marker date="1501357981191" expanded="true" signature="480:481" ph="select * fro... " />
+            <marker date="1501361554873" expanded="true" signature="355:478" ph="select name,... customer" />
+            <marker date="1501361554873" expanded="true" signature="480:481" ph="select * fro... " />
           </folding>
         </state>
       </provider>
@@ -460,6 +505,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/xampp/htdocs/GitHub/team-20/db/sanisa.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4582">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/xampp/htdocs/GitHub/team-20/sakhi_orders1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -470,18 +523,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/GitHub/team-20/db/sanisa.sql">
+    <entry file="file://C:/xampp/htdocs/GitHub/team-20/sakhihome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4582">
+        <state relative-caret-position="-867">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/GitHub/team-20/adminHome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-485">
+          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/xampp/htdocs/GitHub/team-20/SakhiStock.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="56" column="48" lean-forward="false" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
+        <state relative-caret-position="221">
+          <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <element signature="e#7401#7408#1" expanded="true" />
+            <element signature="e#8478#8485#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/matrimony/everafter/congrats.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-536">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/GitHub/team-20/order_placed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -489,7 +569,7 @@
     <entry file="file://C:/xampp/htdocs/GitHub/team-20/sakhi_orders.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
-          <caret line="31" column="138" lean-forward="false" selection-start-line="31" selection-start-column="138" selection-end-line="31" selection-end-column="138" />
+          <caret line="31" column="429" lean-forward="false" selection-start-line="31" selection-start-column="429" selection-end-line="31" selection-end-column="429" />
           <folding />
         </state>
       </provider>

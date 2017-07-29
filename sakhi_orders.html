@@ -29,7 +29,7 @@
                 success: function(data)          //on recieve of reply
                 {
                     for (var i=0; i<data.length; i++) {
-                        var row = $('<tr><td>'+data[i].name+ '</td><td>' + data[i].address + '</td><td>' + data[i].contact_no + '</td><td>' + data[i].flavor +'</td><td>Quantity: ' + data[i].quantity +'</td><td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Accept</button></td><td> <button type="button" class="btn btn-info" data-toggle="modal" data-target="#updateModal">Redirect</button></td></tr>'+ '');
+                        var row = $('<tr><td>'+data[i].name+ '</td><td>' + data[i].address + '</td><td>' + data[i].contact_no + '</td><td>' + data[i].flavor +'</td><td>Quantity: ' + data[i].quantity +'</td><td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Accept</button></td><td> <button type="button" class="btn btn-info" data-toggle="modal" data-target="nearby_sakhi.php">Redirect</button></td></tr>'+ '');
                         $('#myList').append(row);
                     }
                 }
@@ -62,33 +62,11 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="exampleModalLabel">Place Order</h4>
-            </div>
-            <div class="modal-body">
-                <input type="text" name="qty" placeholder="Enter Quantity"></input>
+                <h4 class="modal-title" id="exampleModalLabel">Choose Mode of Delivery</h4>
             </div>
             <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Order Now</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" id="exampleModalLabel">Place Order</h4>
-            </div>
-            <div class="modal-body">
-                <input type="text" name="qty" placeholder="Enter Quantity"></input>
-            </div>
-            <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-danger">Add</button>
-                <button type="button" class="btn btn-primary">Deduct</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" name="pickup">Pick Up</button>
+                <button type="button" class="btn btn-primary" name="home">Home Delivery</button>
             </div>
         </div>
     </div>
