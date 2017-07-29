@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b5f39e4-f059-4cae-b9e9-d0eadefcdce2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/team-20.iml" afterPath="$PROJECT_DIR$/.idea/team-20.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sakhi_orders.php" afterPath="$PROJECT_DIR$/sakhi_orders.php" />
-    </list>
+    <list default="true" id="9b5f39e4-f059-4cae-b9e9-d0eadefcdce2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +15,7 @@
         <entry file="file://C:/xampp/htdocs/GitHub/team-20/sakhi_orders.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="212">
-              <caret line="31" column="468" lean-forward="false" selection-start-line="31" selection-start-column="468" selection-end-line="31" selection-end-column="468" />
+              <caret line="31" column="138" lean-forward="false" selection-start-line="31" selection-start-column="138" selection-end-line="31" selection-end-column="138" />
               <folding />
             </state>
           </provider>
@@ -207,12 +202,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501336899876</updated>
-      <workItem from="1501336901352" duration="18397000" />
+      <workItem from="1501336901352" duration="18590000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18397000" />
+    <option name="totallyTimeSpent" value="18590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -494,7 +489,7 @@
     <entry file="file://C:/xampp/htdocs/GitHub/team-20/sakhi_orders.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
-          <caret line="31" column="468" lean-forward="false" selection-start-line="31" selection-start-column="468" selection-end-line="31" selection-end-column="468" />
+          <caret line="31" column="138" lean-forward="false" selection-start-line="31" selection-start-column="138" selection-end-line="31" selection-end-column="138" />
           <folding />
         </state>
       </provider>
