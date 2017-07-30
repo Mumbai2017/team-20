@@ -50,7 +50,7 @@
 			$.ajax({
 			type:"POST",
 //			url: "https://surajsingh.000webhostapp.com/practice/add.php",
-           url:"http://10.49.169.253/demo/add.php",	
+           url:"http://localhost/team-20/add.php",	
 	data: senddata,
 			success: function(result){
 				var res = $.trim(result);
@@ -68,8 +68,28 @@
 
 	});
 		
+	$("#deduce").click(function(){	
+	var senddata = $('#orderform1').serialize();
+			$.ajax({
+			type:"POST",
+//			url: "https://surajsingh.000webhostapp.com/practice/reduce.php",
+           url:"http://localhost/team-20/reduce.php",	
+	data: senddata,
+			success: function(result){
+				var res = $.trim(result);
 	
-	
+				if(res=="correct")
+				{
+				alert("updated");
+			
+				}
+				if(res=="incorrect")
+				{
+				alert("incorrect");
+				}
+			}});
+
+	}});
 		});
 
 
