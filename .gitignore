@@ -1,3 +1,7 @@
 db/sanisa.sql
 *.sql
 db/sanisa.sql
+phpScripts/sakhi_orders.php
+*.php
+phpScripts/init.php
+*.php

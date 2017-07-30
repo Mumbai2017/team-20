@@ -1,84 +1,120 @@
 <html>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<head>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
-  <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/mdb.css">
-        <link rel="stylesheet" type="text/css" href="css/mdb.min.css">
-        <link rel="stylesheet" type="text/css" href="css/font.css">
-        <link rel="stylesheet" type="text/css" href="css/compiled.css">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-		-->
-	  <script type="text/javascript" src="js/jquery.js"></script>
-<style type="text/css">
+  <title>SaNiSa</title>
 
-#map-canvas {
-  height: 50%;
-  margin: 0px;
-  padding: 0px
-}
-</style>
+        <!--     Fonts and icons     -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+        <!-- CSS Files -->        
+        <link href="assets/css/material-kit.css" rel="stylesheet"/>    
+
+	 <script type="text/javascript" src="js/jquery.js"></script>
+
 </head>
 
 <body>
-   
-    <form id="#form" action="">
-<h2 style="margin-left:10%">Select your Khakhra&nbsp;&nbsp;</h2>
- <select style="margin-left:10%">
-  <option value="volvo">Khakhra</option>
-  <option value="saab">Breakfast</option>
-  <option value="mercedes">Dahi Bajri Methi</option>
-  <option value="audi">Jeera</option>
-     <option value="saab">Khichdi</option>
-  <option value="mercedes">Low Calorie</option>
-  <option value="audi">Methi Masala</option>
-     <option value="saab">Nachni</option>
-  <option value="mercedes">Peppery Oats</option>
-  <option value="audi">Punjabi Masala</option>
-</select>
-        <br>
+ <!-- Navbar -->
+<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#">
+                <div class="logo-container">
+                    <!-- <div class="logo">
+                        <img src="assets/img/logo.png" alt="Creative Tim Logo" rel="tooltip" title="<b>Material Kit</b> was Designed & Coded with care by the staff from <b>Creative Tim</b>" data-placement="bottom" data-html="true">
+                    </div> -->
+                    <div class="brand">
+                        SaNiSa
+                    </div>
 
-        <h2 style="margin-left:10%">Quantity:</h2><select style="margin-left:10%">
-  <option value="1">5</option>
-  <option value="2">6</option>
-  <option value="3">7</option>
-  <option value="4">8</option>
-    <option value="1">9</option>
-  <option value="2">10</option>
-  <option value="3">11</option>
-  <option value="4">12</option>
-    <option value="1">13</option>
-  <option value="2">15</option>
-  <option value="3">16</option>
-  <option value="4">17</option>
-  <option value="1">18</option>
-  <option value="2">19</option>
-  <option value="3">20</option>
-  <option value="4">21</option>
-  <option value="1">22</option>
-  <option value="2">23</option>
-  <option value="3">24</option>
-  <option value="4">25</option>
-</select>
+
+                </div>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navigation-index">
+            <ul class="nav navbar-nav navbar-right">
+            <li class="active" href="index.html"><a href="#">Customer</a></li>
+            <li><a href="SakhiStock.html">Shakhi</a></li>
+            <li><a href="index.html">logout</a></li>
+            
+          </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Navbar -->
+   <div class="col-md-10 col-lg-12 form-group">
+  <form id="#form" action="">
+  <div class="dropdown">
+  <a href="#" class="btn btn-simple dropdown-toggle" data-toggle="dropdown">
+     Select your Khakhra
+      <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu">
+      <li><a href="">Khakhra</a></li>
+      <li><a href="">Breakfast</a></li>
+      <li><a href="">Dahi Bajri Methi</a></li>      
+      <li><a href="">Jeera</a></li>      
+      <li><a href="">Khichdi</a></li>
+      <li><a href="">Low Calorie</a></li>
+      <li><a href="">Methi Masala</a></li>
+      <li><a href="">Nachni</a></li>
+      <li><a href="">Peppery Oats</a></li>
+      <li><a href="">Punjabi Masala</a></li>
+  </ul>
+</div>
+         <br>
+  <div class="dropdown">
+  <a href="#" class="btn btn-simple dropdown-toggle" data-toggle="dropdown">
+     Quantity:
+      <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu">
+      <li><a href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>      
+      <li><a href="">4</a></li>      
+      <li><a href="">5</a></li>
+      <li><a href="">6</a></li>
+      <li><a href="">7</a></li>
+      <li><a href="">8</a></li>
+      <li><a href="">9</a></li>
+      <li><a href="">10</a></li>
+  </ul>
+</div>
 <br>
-        <h2 style="margin-left:10%">Delivery Location:</h2><input style="margin-left:10%" id="t2" type="text" name="location"><br>
-<a id="btn"  ><h2 style="margin-left:10%">GET</h2></a>
+<div class="col-sm-4">
+  <div class="form-group">
+      <input type="text" value="" placeholder="Delivery Location:" class="form-control" />
+  </div>
+</div>
+<br>
+<div id="btn" class="btn btn-primary" >GET</div>
 <a id='testop' ></a>
 <br>
 </form>
+
 <div id="map-canvas">
 </div>
-<br>
-<h2 style="margin-left:10%">Enter Complete Address:</h2><input style="margin-left:10%; margin-bottom:5%
-    " type="textarea" name="t1">
-
-
-
-
+<form>
+  <div class="form-group">    
+    <input type="text" placeholder="Enter Complete Address:" class="form-control">
+  </div>
+  <br><br>
+</form>
+</div>
+</body>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places"></script>
 <script src='js/jquery-1.11.0.min.js'></script>
 <script type="text/javascript" src="js/jquery.js"></script>
@@ -113,12 +149,6 @@ geocoder.geocode( { 'address': address}, function(results, status) {
   if (status == google.maps.GeocoderStatus.OK) {
     latitude = results[0].geometry.location.lat();
     longitude = results[0].geometry.location.lng();
-	var pyrmont = new google.maps.LatLng(latitude, longitude);
-	var map = new google.maps.Map(document.getElementById("map-canvas"), {
-    center: pyrmont,
-    zoom: 13
-  });
-	
     
   } 
 });
@@ -154,7 +184,7 @@ var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions)
    var contentString = add;
    var marker = new google.maps.Marker({
      position: new google.maps.LatLng(lat,lng),
-     
+     map: map,
            });
 
   google.maps.event.addListener(marker, 'click', function() {
@@ -163,30 +193,6 @@ var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions)
    });
 
    bounds.extend(marker.position);
-   var datalat = new Array();
-   var datalog = new Array();
-    $.ajax({                                      
-      url: "http://10.49.169.253/demo/select.php",                  //the script to call to get data          
-      data: "",                        //you can insert url argumnets here to pass to api.php
-                                       //for example "id=5&parent=6"
-      dataType: 'json',                //data format      
-      success: function(data)          //on recieve of reply
-      {
- for (var i=0; i<data.length; i++) {
-            datalat[0]=data[i].lat;
-datalog[0]=data[i].log;
-alert(datalat[0]);			
-alert(datalog[0]);	
-	  }
-}	  
-
-    });
-		
-   // infowindow.setContent(place.name);
-   // infowindow.open(map, this);
-  
-
-   
 
  }
 var geocoder = new google.maps.Geocoder(); 
@@ -206,7 +212,7 @@ function theNext() {
       map.fitBounds(bounds);
     }
   }
-function geocodeAddress(address, next) {
+function geocodeAddress(address, next) {alert("jii");
     geocoder.geocode({address:address}, function (results,status)
       { 
          if (status == google.maps.GeocoderStatus.OK) {
@@ -229,7 +235,4 @@ function geocodeAddress(address, next) {
 
 </script>
 
-
-
-</body>
 </html>
