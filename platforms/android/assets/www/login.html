@@ -1,0 +1,84 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/mdb.css">
+        <link rel="stylesheet" type="text/css" href="css/mdb.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font.css">
+        <link rel="stylesheet" type="text/css" href="css/compiled.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		
+	  <script type="text/javascript" src="js/jquery.js"></script>
+
+<script>
+$(document).ready(function() {
+		$("#btn-submit").click(function(){
+			var senddata = $('#loginform').serialize();
+			$.ajax({
+			type:"POST",
+            url:"http://192.168.43.169/practice/login.php",
+			data: senddata,
+			success: function(result){
+				var res = $.trim(result);
+	
+				if(res=="correct")
+				{				
+					window.location.replace("userhome.html");
+			
+			    }
+				if(res=="incorrect")
+				{
+				alert("incorrect");
+				}
+			}});
+		});
+		
+	
+		});
+	</script>
+		</head>
+	   <body>
+	   <br><br><br>
+	<div class="card">
+    <div class="card-block">
+
+        <!--Header-->
+        <div class="form-header  purple darken-4">
+            <h3> Login:</h3>
+        </div>
+<form id="loginform" name="loginform">
+        <!--Body-->
+        <div class="md-form">
+            <input type="text" id="form2" class="form-control" name="email" placeholder="YOUR EMAIL">
+          </div>
+
+        <div class="md-form">
+          
+            <input type="password" id="form4" class="form-control" name="password" placeholder="PASSWORD">
+          
+        </div>
+
+        <div class="text-center">
+            <a id="btn-submit" class="btn btn-deep-purple">Login</a>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <div class="modal-footer">
+        <div class="options">
+            <p>Not a member? <a href="register.html">Sign Up</a></p>
+           
+        </div>
+    </div>
+
+</div
+    </body>
+
+</html>
