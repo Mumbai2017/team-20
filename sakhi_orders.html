@@ -29,7 +29,11 @@
                 success: function(data)          //on recieve of reply
                 {
                     for (var i=0; i<data.length; i++) {
+<<<<<<< HEAD
                         var row = $('<tr><td>'+data[i].name+ '</td><td>' + data[i].address + '</td><td>' + data[i].contact_no + '</td><td>' + data[i].flavor +'</td><td>Quantity: ' + data[i].quantity +'</td><td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Accept</button></td><td> <button type="button" class="btn btn-info" data-toggle="modal" data-target="#updateModal">Redirect</button></td></tr>'+ '');
+=======
+                        var row = $('<tr><td>'+data[i].name+ '</td><td>' + data[i].address + '</td><td>' + data[i].contact_no + '</td><td>' + data[i].flavor +'</td><td>Quantity: ' + data[i].quantity +'</td><td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Accept</button></td><td> <button type="button" class="btn btn-info" data-toggle="modal" data-target="nearby_sakhi.php">Redirect</button></td></tr>'+ '');
+>>>>>>> 115f4135587fe44866cfe9900dbab2e5e91a594c
                         $('#myList').append(row);
                     }
                 }
@@ -62,6 +66,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
+<<<<<<< HEAD
                 <h4 class="modal-title" id="exampleModalLabel">Place Order</h4>
             </div>
             <div class="modal-body">
@@ -89,6 +94,13 @@
             <div class="modal-footer justify-content-center">
                 <button type="button" class="btn btn-danger">Add</button>
                 <button type="button" class="btn btn-primary">Deduct</button>
+=======
+                <h4 class="modal-title" id="exampleModalLabel">Choose Mode of Delivery</h4>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" name="pickup">Pick Up</button>
+                <button type="button" class="btn btn-primary" name="home">Home Delivery</button>
+>>>>>>> 115f4135587fe44866cfe9900dbab2e5e91a594c
             </div>
         </div>
     </div>
