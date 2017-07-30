@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b5f39e4-f059-4cae-b9e9-d0eadefcdce2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/team-20.iml" afterPath="$PROJECT_DIR$/.idea/team-20.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adminHome.php" afterPath="$PROJECT_DIR$/adminHome.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sakhi_orders.php" afterPath="$PROJECT_DIR$/sakhi_orders.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sakhihome.html" afterPath="$PROJECT_DIR$/sakhihome.html" />
-    </list>
+    <list default="true" id="9b5f39e4-f059-4cae-b9e9-d0eadefcdce2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,56 +11,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sakhi_orders.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sakhi_orders.php">
+      <file leaf-file-name="sakhi_orders.html" pinned="false" current-in-tab="true">
+        <entry file="file://C:/xampp/htdocs/GitHub/team-20/sakhi_orders.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="48" column="44" lean-forward="true" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
+            <state relative-caret-position="212">
+              <caret line="31" column="138" lean-forward="false" selection-start-line="31" selection-start-column="138" selection-end-line="31" selection-end-column="138" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sanisa.sql" pinned="false" current-in-tab="false">
+        <entry file="file://C:/xampp/htdocs/GitHub/team-20/db/sanisa.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4582">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SakhiStock.html" pinned="false" current-in-tab="false">
+        <entry file="file://C:/xampp/htdocs/GitHub/team-20/SakhiStock.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="56" column="48" lean-forward="false" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sakhi_orders1.php" pinned="false" current-in-tab="false">
+        <entry file="file://C:/xampp/htdocs/GitHub/team-20/sakhi_orders1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="70" lean-forward="false" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
               <folding>
-                <element signature="e#2788#2795#1#HTML" expanded="true" />
-                <element signature="e#3745#3752#1#HTML" expanded="true" />
-                <marker date="1501355609245" expanded="true" signature="1802:1837" ph="select * fro... customer" />
-                <marker date="1501355609245" expanded="true" signature="1802:1838" ph="select * fro... customer" />
-                <marker date="1501355609245" expanded="true" signature="1988:2385" ph="..." />
-                <marker date="1501355609245" expanded="true" signature="2047:2104" ph="..." />
-                <marker date="1501355609245" expanded="true" signature="2047:2379" ph="..." />
-                <marker date="1501355609245" expanded="true" signature="2400:2401" ph="..." />
+                <marker date="1501361554873" expanded="true" signature="355:478" ph="select name,... customer" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="interested.php" pinned="false" current-in-tab="false">
-        <entry file="file://C:/xampp/htdocs/matrimony/everafter/interested.php">
+      <file leaf-file-name="details.txt" pinned="false" current-in-tab="false">
+        <entry file="file://C:/xampp/htdocs/GitHub/team-20/details.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="120" column="48" lean-forward="false" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="48" />
-              <folding>
-                <marker date="1489654047034" expanded="true" signature="4275:4312" ph="Select * fro... interested" />
-                <marker date="1489654047034" expanded="true" signature="4445:4478" ph="Select * fro... user" />
-                <marker date="1489654047034" expanded="true" signature="4600:5988" ph="..." />
-                <marker date="1489654047034" expanded="true" signature="4627:5982" ph="..." />
-                <marker date="1489654047034" expanded="true" signature="4672:4758" ph="..." />
-                <marker date="1489654047034" expanded="true" signature="4786:5938" ph="..." />
-                <marker date="1489654047034" expanded="true" signature="4828:5766" ph="..." />
-                <marker date="1489654047034" expanded="true" signature="4846:5752" ph="..." />
-                <marker date="1489654047034" expanded="true" signature="4879:4973" ph="..." />
-                <marker date="1489654047034" expanded="true" signature="5001:5126" ph="..." />
-                <marker date="1489654047034" expanded="true" signature="5154:5258" ph="..." />
-                <marker date="1489654047034" expanded="true" signature="5286:5402" ph="..." />
-                <marker date="1489654047034" expanded="true" signature="5438:5566" ph="..." />
-                <marker date="1489654047034" expanded="true" signature="5591:5736" ph="..." />
-                <marker date="1489654047034" expanded="true" signature="5812:5922" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="details.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/details.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+            <state relative-caret-position="453">
+              <caret line="35" column="9" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="35" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -88,7 +78,10 @@
         <option value="$PROJECT_DIR$/sakhihome.html" />
         <option value="$PROJECT_DIR$/SakhiStock.html" />
         <option value="$PROJECT_DIR$/adminHome.php" />
+        <option value="$PROJECT_DIR$/sakhi_orders1.php" />
         <option value="$PROJECT_DIR$/sakhi_orders.php" />
+        <option value="C:/xampp/htdocs/GitHub/team-20/sakhi_orders1.php" />
+        <option value="C:/xampp/htdocs/GitHub/team-20/sakhi_orders.html" />
       </list>
     </option>
   </component>
@@ -149,6 +142,26 @@
             </path>
             <path>
               <item name="team-20" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team-20" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="session" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="team-20" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitHub" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="team-20" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitHub" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="team-20" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="team-20" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitHub" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="team-20" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="db" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="team-20" type="b2602c69:ProjectViewProjectNode" />
               <item name="matrimony" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -165,7 +178,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/xampp/htdocs/matrimony" />
+    <property name="last_opened_file_path" value="C:/xampp/htdocs/GitHub" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -189,18 +202,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501336899876</updated>
-      <workItem from="1501336901352" duration="12795000" />
+      <workItem from="1501336901352" duration="18590000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12795000" />
+    <option name="totallyTimeSpent" value="18590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1398243" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -251,11 +264,11 @@
         <state relative-caret-position="-1632">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1501345965554" expanded="true" signature="6394:6438" ph="ALTER TABLE `sakhi_stock`... " />
-            <marker date="1501345965554" expanded="true" signature="6483:6684" ph="ALTER TABLE `sg_order`... " />
-            <marker date="1501345965554" expanded="true" signature="6720:6782" ph="/*!40101 SET... " />
-            <marker date="1501345965554" expanded="true" signature="6784:6848" ph="/*!40101 SET... " />
-            <marker date="1501345965554" expanded="true" signature="6850:6912" ph="/*!40101 SET... " />
+            <marker date="1501356313436" expanded="true" signature="7080:7124" ph="ALTER TABLE `sakhi_stock`... " />
+            <marker date="1501356313436" expanded="true" signature="7169:7370" ph="ALTER TABLE `sg_order`... " />
+            <marker date="1501356313436" expanded="true" signature="7406:7468" ph="/*!40101 SET... " />
+            <marker date="1501356313436" expanded="true" signature="7470:7534" ph="/*!40101 SET... " />
+            <marker date="1501356313436" expanded="true" signature="7536:7598" ph="/*!40101 SET... " />
           </folding>
         </state>
       </provider>
@@ -265,33 +278,32 @@
         <state relative-caret-position="-765">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#class#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1501347745122" expanded="true" signature="2810:2846" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="2810:2880" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="2810:7511" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="2912:3468" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="2984:3005" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="3125:3434" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="3500:4034" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="3572:3593" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="3713:4000" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="4066:4604" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="4138:4159" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="4279:4570" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="4636:5182" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="4708:4729" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="4849:5148" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="5214:5762" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="5427:5728" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="5794:6330" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="5866:5887" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="6007:6296" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="6362:6910" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="6434:6455" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="6575:6876" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="6942:7494" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="7014:7035" ph="..." />
-            <marker date="1501347745122" expanded="true" signature="7155:7460" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="2810:2846" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="2810:2880" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="7204:7296" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="2912:3468" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="2984:3005" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="3125:3434" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="3500:4034" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="3572:3593" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="3713:4000" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="4066:4604" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="4138:4159" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="4279:4570" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="4636:5182" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="4708:4729" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="4849:5148" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="5214:5762" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="5427:5728" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="5794:6330" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="5866:5887" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="6007:6296" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="6362:6910" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="6434:6455" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="6575:6876" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="7204:7279" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="7014:7035" ph="..." />
+            <marker date="1501357984284" expanded="true" signature="7204:7245" ph="..." />
           </folding>
         </state>
       </provider>
@@ -356,17 +368,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
           <caret line="155" column="8" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="160" selection-end-column="7" />
-          <folding>
-            <element signature="e#6309#6316#1" expanded="true" />
-            <element signature="e#7380#7387#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -395,20 +396,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SakhiOrders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/details1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="2" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="2" />
+          <folding>
+            <marker date="1501343510969" expanded="true" signature="360:382" ph="select * fro... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/details.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="37" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sakhi_orders1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+          <folding>
+            <marker date="1501357981191" expanded="true" signature="355:478" ph="select name,... customer" />
+            <marker date="1501357981191" expanded="true" signature="480:481" ph="select * fro... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sakhi_orders.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="48" column="44" lean-forward="true" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
+        <state relative-caret-position="238">
+          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding>
-            <element signature="e#2788#2795#1#HTML" expanded="true" />
-            <element signature="e#3745#3752#1#HTML" expanded="true" />
-            <marker date="1501355609245" expanded="true" signature="1802:1837" ph="select * fro... customer" />
-            <marker date="1501355609245" expanded="true" signature="1802:1838" ph="select * fro... customer" />
-            <marker date="1501355609245" expanded="true" signature="1988:2385" ph="..." />
-            <marker date="1501355609245" expanded="true" signature="2047:2104" ph="..." />
-            <marker date="1501355609245" expanded="true" signature="2047:2379" ph="..." />
-            <marker date="1501355609245" expanded="true" signature="2400:2401" ph="..." />
+            <element signature="e#2277#2284#1#HTML" expanded="true" />
+            <element signature="e#3234#3241#1#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/GitHub/team-20/details.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="35" column="9" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="35" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/GitHub/team-20/sakhi_orders1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="70" lean-forward="false" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+          <folding>
+            <marker date="1501361554873" expanded="true" signature="355:478" ph="select name,... customer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/GitHub/team-20/db/sanisa.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4582">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/GitHub/team-20/SakhiStock.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="56" column="48" lean-forward="false" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/GitHub/team-20/sakhi_orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="31" column="138" lean-forward="false" selection-start-line="31" selection-start-column="138" selection-end-line="31" selection-end-column="138" />
+          <folding />
         </state>
       </provider>
     </entry>
