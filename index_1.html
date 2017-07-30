@@ -1,0 +1,146 @@
+<!DOCTYPE html >
+<!This file takes data in form of XML from MySQL Database and Stores it into data.php file
+    and we retriew the coordinates over here>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Using MySQL and PHP with Google Maps</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 50%;
+        width: 50%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="map"></div>
+
+    <script>
+      var customLabel = {
+        restaurant: {
+          label: 'R'
+        },
+        bar: {
+          label: 'B'
+        }
+      };
+
+        function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: new google.maps.LatLng(-33.863276, 151.207977),
+          zoom: 12
+        });
+        var infoWindow = new google.maps.InfoWindow;
+
+          // Change this depending on the name of your PHP or XML file
+          downloadUrl('data.php', function(data) {
+            var xml = data.responseXML;
+            var markers = xml.documentElement.getElementsByTagName('marker');
+            Array.prototype.forEach.call(markers, function(markerElem) {
+              var id = markerElem.getAttribute('id');
+              var name = markerElem.getAttribute('name');
+              var address = markerElem.getAttribute('address');
+              var type = markerElem.getAttribute('type');
+              var point = new google.maps.LatLng(
+                  parseFloat(markerElem.getAttribute('lat')),
+                  parseFloat(markerElem.getAttribute('lng')));
+
+              var infowincontent = document.createElement('div');
+              //Info Window for Name
+              var strong = document.createElement('strong');
+              strong.textContent = name
+              infowincontent.appendChild(strong);
+              infowincontent.appendChild(document.createElement('br'));
+              //Info Window for Address
+              var text = document.createElement('text');
+              text.textContent = address
+              infowincontent.appendChild(text);
+              
+              var icon = customLabel[type] || {};
+              var marker = new google.maps.Marker({
+                map: map,
+                position: point,
+                label: icon.label
+              });
+           
+              marker.addListener('click', function() {
+                infoWindow.setContent(infowincontent);//Calls infowincontent to show Name and Address
+                infoWindow.open(map, marker);
+              });
+            });
+          });
+        }
+
+
+
+      function downloadUrl(url, callback) {
+        var request = window.ActiveXObject ?
+            new ActiveXObject('Microsoft.XMLHTTP') :
+            new XMLHttpRequest;
+
+        request.onreadystatechange = function() {
+          if (request.readyState == 4) {
+            request.onreadystatechange = doNothing;
+            callback(request, request.status);
+          }
+        };
+
+        request.open('GET', url, true);
+        request.send(null);
+      }
+
+      function doNothing() {}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRUO1-wldVKijutZPv2MOhVEb9merooLU&callback=initMap">
+    </script>
+   
+    <?php
+session_start();
+
+ob_start();
+$host="localhost"; // Host name 
+$username="root"; // Mysql username 
+$password="root"; // Mysql password 
+$db_name="g"; // Database name 
+ // Table name 
+
+// Connect to server and select databse.
+$link = mysqli_connect("localhost", "root", "root", "g");
+
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+
+$sql="SELECT * FROM markers";
+/*$result=mysqli_query($link, $sql);
+
+$count=  mysqli_num_rows($result);
+*/
+
+if($result = $link->query("SELECT * FROM markers"))
+{
+echo "hello";
+}
+else 
+{
+echo "Wrong Username or Password";
+}
+?>
+
+  </body>
+</html>
+<!Putting it all together
+Open the index.html file in a browser. 
+When the page loads, the initMap function sets up the map and then calls the downloadUrl function. 
+This function iterates through all the marker elements, and retrieves the name, address, type, and latLng attributes for each marker element.
+The code then creates markers, adds the markers to the map, and binds an info window to each marker to display a description on click. >
