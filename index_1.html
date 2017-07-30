@@ -110,12 +110,12 @@ session_start();
 ob_start();
 $host="localhost"; // Host name 
 $username="root"; // Mysql username 
-$password="root"; // Mysql password 
-$db_name="g"; // Database name 
+$password="12345"; // Mysql password 
+$db_name="sanisa"; // Database name 
  // Table name 
 
 // Connect to server and select databse.
-$link = mysqli_connect("localhost", "root", "root", "g");
+$link = mysqli_connect("localhost", "root", "12345", "sanisa");
 
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
@@ -139,8 +139,3 @@ echo "Wrong Username or Password";
 
   </body>
 </html>
-<!Putting it all together
-Open the index.html file in a browser. 
-When the page loads, the initMap function sets up the map and then calls the downloadUrl function. 
-This function iterates through all the marker elements, and retrieves the name, address, type, and latLng attributes for each marker element.
-The code then creates markers, adds the markers to the map, and binds an info window to each marker to display a description on click. >
