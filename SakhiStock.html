@@ -1,197 +1,110 @@
 <html>
 <head>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
-  <link rel="stylesheet" type="text/css" href="css1/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   
-        <link rel="stylesheet" type="text/css" href="css1/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css1/style.css">
-        <link rel="stylesheet" type="text/css" href="css1/mdb.css">
-        <link rel="stylesheet" type="text/css" href="css1/mdb.min.css">
-        <link rel="stylesheet" type="text/css" href="css1/font.css">
-        <link rel="stylesheet" type="text/css" href="css1/compiled.css">
-		<link rel="stylesheet" type="text/css" href="css1/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/mdb.css">
+        <link rel="stylesheet" type="text/css" href="css/mdb.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font.css">
+        <link rel="stylesheet" type="text/css" href="css/compiled.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		
 	  <script type="text/javascript" src="js/jquery.js"></script>
 
 <script>
-
-      $(document).ready(function() {
- 
-	  $("#ordernow").click(function(){
-			var senddata = $('#orderform').serialize();
+$(document).ready(function() {
+		$("#orderNow").click(function(){
+			//var senddata = $('#order').serialize();
 			$.ajax({
 			type:"POST",
-//			url: "https://surajsingh.000webhostapp.com/practice/rigister.php",
-           url:"http://localhost/team-20/sakhi_order.php",	
-	data: senddata,
+      url:"http://localhost/team-20/phpScripts/sakhi_order.php",			
 			success: function(result){
 				var res = $.trim(result);
-	
-				if(res=="correct")
-				{
-					window.location.replace("index.html");
-			
-				}
-				if(res=="incorrect")
-				{
-				alert("incorrect");
-				}
+	     alert(res);	
 			}});
 		});
 		
 	
-	
-	$("#add").click(function(){	
-	var senddata = $('#orderform1').serialize();
-			$.ajax({
-			type:"POST",
-//			url: "https://surajsingh.000webhostapp.com/practice/add.php",
-           url:"http://localhost/team-20/add.php",	
-	data: senddata,
-			success: function(result){
-				var res = $.trim(result);
-	
-				if(res=="correct")
-				{
-					window.location.replace("index.html");
-			
-				}
-				if(res=="incorrect")
-				{
-				alert("incorrect");
-				}
-			}});
-
-	});
-		
-	$("#deduce").click(function(){	
-	var senddata = $('#orderform1').serialize();
-			$.ajax({
-			type:"POST",
-//			url: "https://surajsingh.000webhostapp.com/practice/reduce.php",
-           url:"http://localhost/team-20/reduce.php",	
-	data: senddata,
-			success: function(result){
-				var res = $.trim(result);
-	
-				if(res=="correct")
-				{
-				alert("updated");
-			
-				}
-				if(res=="incorrect")
-				{
-				alert("incorrect");
-				}
-			}});
-
-	}});
 		});
-
-
 	</script>
 		</head>
 	   <body>
-           
-            <button style="width:10%; height:7%;"  type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Order</button> 
-            <button style="width:10%; height:7%;" type="button" class="btn btn-info" data-target="#updateModal" data-toggle="modal">Update</button>
-           
+	 
       <ul class="list-group">
           <li class="list-group-item justify-content-between">
-            <h3 style="margin-left:30%"><img style="width:30%; height:20%" src="img/1.jpg" class="img-fluid common-img">
-              Breakfast&nbsp;&nbsp;
-              <span class="badge badge-primary badge-pill">1400 Kg</span>  </h3>         
-               
+            <img src="img/1.jpg" class="img-fluid common-img">
+              Breakfast
+              <span class="badge badge-primary badge-pill">1400 Kg</span>           
+               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Order</button> 
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#updateModal">Update</button>
           </li>
           <li class="list-group-item justify-content-between">
-              <h3 style="margin-left:30%"><img style="width:30%; height:20%" src="img/2.jpg" class="img-fluid common-img">
-              Dahi Bajri Methi&nbsp;&nbsp;
-              <span class="badge badge-primary badge-pill">200 Kg</span></h3>
+              <img src="img/2.jpg" class="img-fluid common-img">
+              Dahi Bajri Methi
+              <span class="badge badge-primary badge-pill">200 Kg</span>
+               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Order</button> 
+              <button type="button" class="btn btn-info" data-target="#updateModal" data-toggle="modal">Update</button>
           </li>
           <li class="list-group-item justify-content-between">
-              <h3 style="margin-left:30%"><img style="width:30%; height:20%" src="img/3.jpg" class="img-fluid common-img">
-              Jeera &nbsp;&nbsp;<span class="badge badge-primary badge-pill">30 Kg</span></h3>
-              
+              <img src="img/3.jpg" class="img-fluid common-img">
+              Jeera
+              <span class="badge badge-primary badge-pill">30 Kg</span>
+               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Order</button> 
+              <button type="button" class="btn btn-info" data-target="#updateModal" data-toggle="modal">Update</button>
           </li>
            <li class="list-group-item justify-content-between">
-              <h3 style="margin-left:30%"><img style="width:30%; height:20%" src="img/4.jpg" class="img-fluid common-img">
-              Khichdi&nbsp;&nbsp;
-              <span class="badge badge-primary badge-pill">40 Kg</span></h3>
+              <img src="img/4.jpg" class="img-fluid common-img">
+              Khichdi
+              <span class="badge badge-primary badge-pill">40 Kg</span>
+               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Order</button> 
+              <button type="button" class="btn btn-info" data-target="#updateModal" data-toggle="modal">Update</button>
           </li>
            <li class="list-group-item justify-content-between">
-             <h3 style="margin-left:30%"> <img  style="width:30%; height:20%" src="img/5.jpg" class="img-fluid common-img">
-              Low Calorie&nbsp;&nbsp;
-              <span class="badge badge-primary badge-pill">56 Kg</span></h3>
+              <img src="img/5.jpg" class="img-fluid common-img">
+              Low Calorie
+              <span class="badge badge-primary badge-pill">56 Kg</span>
+               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Order</button> 
+              <button type="button" class="btn btn-info" data-target="#updateModal" data-toggle="modal">Update</button>
           </li>
            <li class="list-group-item justify-content-between">
-              <h3 style="margin-left:30%"><img style="width:30%; height:20%" src="img/6.jpg" class="img-fluid common-img">
-              Methi Masala&nbsp;&nbsp;
-              <span class="badge badge-primary badge-pill">45 Kg</span></h3>
+              <img src="img/6.jpg" class="img-fluid common-img">
+              Methi Masala
+              <span class="badge badge-primary badge-pill">45 Kg</span>
+               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Order</button> 
+              <button type="button" class="btn btn-info" data-target="#updateModal" data-toggle="modal">Update</button>
           </li>
            <li class="list-group-item justify-content-between">
-              <h3 style="margin-left:30%"><img style="width:30%; height:20%" src="img/7.jpg" class="img-fluid common-img">
-              Nachni&nbsp;&nbsp;
-              <span class="badge badge-primary badge-pill">12 Kg</span></h3>
+              <img src="img/7.jpg" class="img-fluid common-img">
+              Nachni
+              <span class="badge badge-primary badge-pill">12 Kg</span>
+               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Order</button> 
+              <button type="button" class="btn btn-info" data-target="#updateModal" data-toggle="modal">Update</button>
           </li>
            <li class="list-group-item justify-content-between">
-              <h3 style="margin-left:30%"><img style="width:30%; height:20%" src="img/8.jpg" class="img-fluid common-img">
-              Peppery Oats&nbsp;&nbsp;
-              <span class="badge badge-primary badge-pill">9 Kg</span></h3>
+              <img src="img/8.jpg" class="img-fluid common-img">
+              Peppery Oats
+              <span class="badge badge-primary badge-pill">9 Kg</span>
+               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Order</button> 
+              <button type="button" class="btn btn-info" data-target="#updateModal" data-toggle="modal">Update</button>
           </li>
            <li class="list-group-item justify-content-between">
-             <h3 style="margin-left:30%"> <img style="width:30%; height:20%" src="img/9.jpg" class="img-fluid common-img">
-              Punjabi Masala&nbsp;&nbsp;
-              <span class="badge badge-primary badge-pill">9 Kg</span></h3>
+              <img src="img/9.jpg" class="img-fluid common-img">
+              Punjabi Masala
+              <span class="badge badge-primary badge-pill">9 Kg</span>
+               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Order</button> 
+              <button type="button" class="btn btn-info" data-target="#updateModal" data-toggle="modal">Update</button>
           </li>
       </ul>
 
    
 
        
-      <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-top:10%">
-          <div class="modal-dialog" role="document">
-             
-              <div class="modal-content">
-                  
-                  <div class="modal-header">
-                      
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                      <h4 class="modal-title" id="exampleModalLabel">Place Order</h4>
-                  </div>
-                  <form method="post" name="orderform" id="orderform">
-      <h2 style="margin-left:10%">Select your Khakhra&nbsp;&nbsp;</h2>
- <select name="flavor" style="margin-left:10%">
-  <option name="flavor" value="volvo">Khakhra</option>
-  <option name="flavor" value="saab">Breakfast</option>
-  <option name="flavor" value="mercedes">Dahi Bajri Methi</option>
-  <option name="flavor" value="audi">Jeera</option>
-     <option name="flavor" value="saab">Khichdi</option>
-  <option name="flavor" value="mercedes">Low Calorie</option>
-  <option name="flavor" value="audi">Methi Masala</option>
-     <option name="flavor" value="saab">Nachni</option>
-  <option name="flavor" value="mercedes">Peppery Oats</option>
-  <option name="flavor" value="audi">Punjabi Masala</option>
-</select>
-
-                      <div class="modal-body">
-                      <input style="margin-left:10%" type="text" name="qty" placeholder="Enter Quantity">
-                  </div>
-                  <div class="modal-footer justify-content-center">
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                      <a  class="btn btn-primary" id="orderNow">Order Now</a>
-                  </div>
-                  </form>
-              </div>
-                  
-          </div>
-      </div>
-      <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-top:10%;">
+      <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
               <div class="modal-content">
                   <div class="modal-header">
@@ -200,32 +113,36 @@
                       </button>
                       <h4 class="modal-title" id="exampleModalLabel">Place Order</h4>
                   </div>
-                              <form method="post" name="orderform1" id="orderform1">
-      <h2 style="margin-left:10%">Select your Khakhra&nbsp;&nbsp;</h2>
- <select style="margin-left:10%">
-  <option value="volvo">Khakhra</option>
-  <option value="saab">Breakfast</option>
-  <option value="mercedes">Dahi Bajri Methi</option>
-  <option value="audi">Jeera</option>
-     <option value="saab">Khichdi</option>
-  <option value="mercedes">Low Calorie</option>
-  <option value="audi">Methi Masala</option>
-     <option value="saab">Nachni</option>
-  <option value="mercedes">Peppery Oats</option>
-  <option value="audi">Punjabi Masala</option>
-</select>
                   <div class="modal-body">
-                  
                       <input type="text" name="qty" placeholder="Enter Quantity">
                   </div>
                   <div class="modal-footer justify-content-center">
-                      <a  id="add" class="btn btn-danger">Add</a>
-                      <a  id="deduct" class="btn btn-primary">Deduct</a>
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" id="orderNow">Order Now</button>
                   </div>
-                  </form>
               </div>
           </div>
-      </div>                                                                                                                                       
+      </div>
+      <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="exampleModalLabel">Place Order</h4>
+                  </div>
+                  <div class="modal-body">
+                      <input type="text" name="qty" placeholder="Enter Quantity"></input>
+                  </div>
+                  <div class="modal-footer justify-content-center">
+                      <button type="button" class="btn btn-danger">Add</button>
+                      <button type="button" class="btn btn-primary">Deduct</button>
+                  </div>
+              </div>
+          </div>
+      </div>                                                                                                    
+                                            
  </body>
 <script type="text/javascript">
 $('#orderModal').modal('show');
