@@ -104,38 +104,6 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRUO1-wldVKijutZPv2MOhVEb9merooLU&callback=initMap">
     </script>
    
-    <?php
-session_start();
-
-ob_start();
-$host="localhost"; // Host name 
-$username="root"; // Mysql username 
-$password="12345"; // Mysql password 
-$db_name="sanisa"; // Database name 
- // Table name 
-
-// Connect to server and select databse.
-$link = mysqli_connect("localhost", "root", "12345", "sanisa");
-
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
-
-$sql="SELECT * FROM markers";
-/*$result=mysqli_query($link, $sql);
-
-$count=  mysqli_num_rows($result);
-*/
-
-if($result = $link->query("SELECT * FROM markers"))
-{
-echo "hello";
-}
-else 
-{
-echo "Wrong Username or Password";
-}
-?>
 
   </body>
 </html>
