@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://C:/xampp/htdocs/GitHub/.idea/GitHub.iml" filepath="C:/xampp/htdocs/GitHub/.idea/GitHub.iml" />
       <module fileurl="file://C:/xampp/htdocs/matrimony/.idea/matrimony.iml" filepath="C:/xampp/htdocs/matrimony/.idea/matrimony.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/team-20.iml" filepath="$PROJECT_DIR$/.idea/team-20.iml" />
     </modules>
