@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="9b5f39e4-f059-4cae-b9e9-d0eadefcdce2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sakhi_orders1.php" afterPath="$PROJECT_DIR$/sakhi_orders1.php" />
+    </list>
+=======
     <list default="true" id="9b5f39e4-f059-4cae-b9e9-d0eadefcdce2" name="Default" comment="" />
+>>>>>>> 36fdfa7793eb444b9d8255902d4bf0b9ebb6ddcc
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,53 +18,151 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sakhi_orders.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sakhi_orders.html" pinned="false" current-in-tab="false">
         <entry file="file://C:/xampp/htdocs/GitHub/team-20/sakhi_orders.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="646">
+              <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+              <folding>
+                <element signature="e#2923#2930#1" expanded="true" />
+              </folding>
+=======
             <state relative-caret-position="212">
               <caret line="31" column="138" lean-forward="false" selection-start-line="31" selection-start-column="138" selection-end-line="31" selection-end-column="138" />
               <folding />
+>>>>>>> 36fdfa7793eb444b9d8255902d4bf0b9ebb6ddcc
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="filter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/filter.php">
+=======
       <file leaf-file-name="sanisa.sql" pinned="false" current-in-tab="false">
         <entry file="file://C:/xampp/htdocs/GitHub/team-20/db/sanisa.sql">
+>>>>>>> 36fdfa7793eb444b9d8255902d4bf0b9ebb6ddcc
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-4582">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+<<<<<<< HEAD
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SakhiStock.html" pinned="false" current-in-tab="false">
-        <entry file="file://C:/xampp/htdocs/GitHub/team-20/SakhiStock.html">
+      <file leaf-file-name="userorder.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/userorder.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="56" column="48" lean-forward="false" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
+            <state relative-caret-position="430">
+              <caret line="227" column="3" lean-forward="true" selection-start-line="227" selection-start-column="3" selection-end-line="227" selection-end-column="3" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sakhi_order.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sakhi_order.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1501371197039" expanded="true" signature="411:573" ph="insert into sg_order... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="sakhi_orders1.php" pinned="false" current-in-tab="false">
-        <entry file="file://C:/xampp/htdocs/GitHub/team-20/sakhi_orders1.php">
+        <entry file="file://$PROJECT_DIR$/sakhi_orders1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="70" lean-forward="false" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+            <state relative-caret-position="374">
+              <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
               <folding>
-                <marker date="1501361554873" expanded="true" signature="355:478" ph="select name,... customer" />
+                <marker date="1501376642142" expanded="true" signature="355:478" ph="select name,... customer" />
+                <marker date="1501376642142" expanded="true" signature="355:479" ph="select cid, customer" />
+                <marker date="1501376642142" expanded="true" signature="355:480" ph="select cid, customer" />
+                <marker date="1501376642142" expanded="true" signature="479:480" ph="select * fro... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="details.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/details.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="538">
+              <caret line="37" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="details1.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/details1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+              <folding>
+                <marker date="1501343510969" expanded="true" signature="360:382" ph="select * fro... " />
+              </folding>
+=======
+>>>>>>> 36fdfa7793eb444b9d8255902d4bf0b9ebb6ddcc
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delivery_type.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/delivery_type.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="25">
+              <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+              <folding>
+                <marker date="1501375082397" expanded="true" signature="439:585" ph="INSERT INTO student... " />
+              </folding>
+=======
+            <state relative-caret-position="391">
+              <caret line="56" column="48" lean-forward="false" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
+              <folding />
+>>>>>>> 36fdfa7793eb444b9d8255902d4bf0b9ebb6ddcc
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="527">
+              <caret line="31" column="2" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="2" />
+              <folding>
+                <marker date="1501369371224" expanded="true" signature="414:560" ph="INSERT INTO student... " />
+=======
+            <state relative-caret-position="272">
+              <caret line="16" column="70" lean-forward="false" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+              <folding>
+                <marker date="1501361554873" expanded="true" signature="355:478" ph="select name,... customer" />
+>>>>>>> 36fdfa7793eb444b9d8255902d4bf0b9ebb6ddcc
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="44" selection-end-column="0" />
+=======
+      <file leaf-file-name="details.txt" pinned="false" current-in-tab="false">
         <entry file="file://C:/xampp/htdocs/GitHub/team-20/details.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="453">
               <caret line="35" column="9" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="35" selection-end-column="9" />
+>>>>>>> 36fdfa7793eb444b9d8255902d4bf0b9ebb6ddcc
               <folding />
             </state>
           </provider>
@@ -81,7 +186,12 @@
         <option value="$PROJECT_DIR$/sakhi_orders1.php" />
         <option value="$PROJECT_DIR$/sakhi_orders.php" />
         <option value="C:/xampp/htdocs/GitHub/team-20/sakhi_orders1.php" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/delivery_type.php" />
+=======
+>>>>>>> 36fdfa7793eb444b9d8255902d4bf0b9ebb6ddcc
         <option value="C:/xampp/htdocs/GitHub/team-20/sakhi_orders.html" />
+        <option value="$PROJECT_DIR$/sakhi_orders1.php" />
       </list>
     </option>
   </component>
@@ -202,12 +312,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501336899876</updated>
+<<<<<<< HEAD
+      <workItem from="1501336901352" duration="32315000" />
+=======
       <workItem from="1501336901352" duration="18590000" />
+>>>>>>> 36fdfa7793eb444b9d8255902d4bf0b9ebb6ddcc
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="32315000" />
+=======
     <option name="totallyTimeSpent" value="18590000" />
+>>>>>>> 36fdfa7793eb444b9d8255902d4bf0b9ebb6ddcc
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -412,6 +530,8 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/details1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -441,6 +561,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> 36fdfa7793eb444b9d8255902d4bf0b9ebb6ddcc
     <entry file="file://$PROJECT_DIR$/sakhi_orders.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -472,24 +593,120 @@
     </entry>
     <entry file="file://C:/xampp/htdocs/GitHub/team-20/db/sanisa.sql">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+=======
         <state relative-caret-position="-4582">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 36fdfa7793eb444b9d8255902d4bf0b9ebb6ddcc
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/xampp/htdocs/GitHub/team-20/SakhiStock.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="481">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="44" selection-end-column="0" />
+=======
         <state relative-caret-position="391">
           <caret line="56" column="48" lean-forward="false" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
+>>>>>>> 36fdfa7793eb444b9d8255902d4bf0b9ebb6ddcc
           <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="2" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="2" />
+          <folding>
+            <marker date="1501369371224" expanded="true" signature="414:560" ph="INSERT INTO student... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_type.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding>
+            <marker date="1501375082397" expanded="true" signature="439:585" ph="INSERT INTO student... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sakhi_order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1501371197039" expanded="true" signature="411:573" ph="insert into sg_order... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/details.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="37" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/details1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding>
+            <marker date="1501343510969" expanded="true" signature="360:382" ph="select * fro... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sakhi_orders1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding>
+            <marker date="1501376642142" expanded="true" signature="355:478" ph="select name,... customer" />
+            <marker date="1501376642142" expanded="true" signature="355:479" ph="select cid, customer" />
+            <marker date="1501376642142" expanded="true" signature="355:480" ph="select cid, customer" />
+            <marker date="1501376642142" expanded="true" signature="479:480" ph="select * fro... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://C:/xampp/htdocs/GitHub/team-20/sakhi_orders.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding>
+            <element signature="e#2923#2930#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userorder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="227" column="3" lean-forward="true" selection-start-line="227" selection-start-column="3" selection-end-line="227" selection-end-column="3" />
+=======
+    <entry file="file://C:/xampp/htdocs/GitHub/team-20/sakhi_orders.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="31" column="138" lean-forward="false" selection-start-line="31" selection-start-column="138" selection-end-line="31" selection-end-column="138" />
+>>>>>>> 36fdfa7793eb444b9d8255902d4bf0b9ebb6ddcc
           <folding />
         </state>
       </provider>
