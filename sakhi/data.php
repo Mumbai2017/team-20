@@ -1,6 +1,8 @@
 <?php
 
-require("phpsqlajax.php");
+$username="root";
+$password="root";
+$database="g";
 
 // Start XML file, create parent node
 
