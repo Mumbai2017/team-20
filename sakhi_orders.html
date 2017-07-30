@@ -27,7 +27,7 @@
                 success: function(data)          //on recieve of reply
                 {
                     for (var i=0; i<data.length; i++) {
-                        var row = $('<tr><td align="center" width="20%">   '+data[i].name+ '   </td><td align="center" width="20%">   ' + data[i].address + '   </td><td align="center" width="20%">  ' + data[i].contact_no + '  </td><td align="center" width="20%">  ' + data[i].flavor +'  </td><td align="center" width="20%">  ' + data[i].quantity +'  </td><td align="center" width="20%"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Accept</button></td><td align="center" width="20%"> <button type="button" class="btn btn-info" data-toggle="modal" data-target="nearby_sakhi.php">Redirect</button></td></tr>'+ '');
+                        var row = $('<tr><td align="center" width="20%">'+data[i].name+ '   </td><td align="center" width="20%">   ' + data[i].address + '   </td><td align="center" width="20%">  ' + data[i].contact_no + '  </td><td align="center" width="20%">  ' + data[i].flavor +'  </td><td align="center" width="20%">  ' + data[i].quantity +'</td><td align="center" width="20%">'+data[i].order_at +  '</td><td align="center" width="20%"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Accept</button></td><td align="center" width="20%"> <button type="button" class="btn btn-info" data-toggle="modal" data-target="nearby_sakhi.php">Redirect</button></td></tr>'+ '');
                         $('#myList').append(row);
                     }
                 }
@@ -46,6 +46,8 @@
                 <th>     Contact No.    </th>
                 <th>      Flavor     </th>
                 <th>      Quantity   </th>
+                <th>      Order Time   </th>
+
             </tr>
         </table>
     </li>
