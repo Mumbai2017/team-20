@@ -1,123 +1,69 @@
 <html>
 <head>
-    
-    <!--     Fonts and icons     -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- CSS Files -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="assets/css/demo.css" rel="stylesheet" />
-   
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mdb.css">
+    <link rel="stylesheet" type="text/css" href="css/mdb.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/compiled.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+
     <script id="source" language="javascript" type="text/javascript">
-
         $(function ()
         {
             $.ajax({
                 url: "http://10.49.191.59/Github/team-20/sakhi_orders1.php",                  //the script to call to get data
-
                 data: "",                        //you can insert url argumnets here to pass to api.php
                                                  //for example "id=5&parent=6"
                 dataType: 'json',                //data format
                 success: function(data)          //on recieve of reply
                 {
                     for (var i=0; i<data.length; i++) {
-                        var row = $('<tr><td>'+data[i].name+ '</td><td>' + data[i].address + '</td><td>' + data[i].contact_no + '</td><td>' + data[i].flavor +'</td><td>Quantity: ' + data[i].quantity +'</td><td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Accept</button></td><td> <button type="button" class="btn btn-info" data-toggle="modal" data-target="#updateModal">Redirect</button></td></tr>'+ '');
+                        var row = $('<tr><td align="center" width="20%">   '+data[i].name+ '   </td><td align="center" width="20%">   ' + data[i].address + '   </td><td align="center" width="20%">  ' + data[i].contact_no + '  </td><td align="center" width="20%">  ' + data[i].flavor +'  </td><td align="center" width="20%">  ' + data[i].quantity +'  </td><td align="center" width="20%"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#orderModal">Accept</button></td><td align="center" width="20%"> <button type="button" class="btn btn-info" data-toggle="modal" data-target="nearby_sakhi.php">Redirect</button></td></tr>'+ '');
                         $('#myList').append(row);
                     }
                 }
             });
         });
-
     </script>
 
 </head>
 <body>
-    <!-- Navbar -->
-<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="#">
-                <div class="logo-container">                    
-                    <div class="brand">
-                        SaNiSa
-                    </div>
-
-
-                </div>
-            </a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navigation-index">
-            <ul class="nav navbar-nav navbar-right">
-            <li class="active" href="index.html"><a href="#">Customer</a></li>
-            <li><a href="SakhiStock.html">Shakhi</a></li>
-            <li><a href="index.html">logout</a></li>
-            
-          </ul>
-        </div>
-    </div>
-</nav>
-<!-- End Navbar -->
-<ul class="list-group col-md-10 col-lg-12" >
+<ul class="list-group" >
     <li class="list-group-item justify-content-between" >
-        <table class="table" id="myList">
+        <table class="pure-table "id="myList" border="1">
             <tr>
-                <th>Name</th>
-                <th>Address</th>
-                <th>Contact No.</th>
-                <th>Flavor</th>
-                <th>Quantity</th>
+                <th>       Name     </th>
+                <th>      Address    </th>
+                <th>     Contact No.    </th>
+                <th>      Flavor     </th>
+                <th>      Quantity   </th>
             </tr>
         </table>
     </li>
 </ul>
 
 
-    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="exampleModalLabel">Place Order</h4>
-            </div>
-            <div class="modal-body">
-                <input type="text" name="qty" placeholder="Enter Quantity"></input>
+                <h4 class="modal-title" id="exampleModalLabel">Choose Mode of Delivery</h4>
             </div>
             <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Order Now</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" id="exampleModalLabel">Place Order</h4>
-            </div>
-            <div class="modal-body">
-                <input type="text" name="qty" placeholder="Enter Quantity"></input>
-            </div>
-            <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-danger">Add</button>
-                <button type="button" class="btn btn-primary">Deduct</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" name="pickup">Pick Up</button>
+                <button type="button" class="btn btn-primary" name="home">Home Delivery</button>
             </div>
         </div>
     </div>
@@ -128,8 +74,4 @@
     $('#orderModal').modal('show');
     $('#updateModal').modal('show');
 </script>
-<script src="assets/js/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="assets/js/material.min.js"></script>
-    <script src="assets/js/material-kit.js" type="text/javascript"></script>
 </html>
